@@ -1,7 +1,7 @@
 /* Tablet Landscape */
 @media screen and (max-width: 1060px) {
     #primary { width:67%; }
-    #secondary { width:30%; margin-left:3%;}  
+    #secondary { width:30%; margin-left:3%;}
 }
 
 /* Tabled Portrait */
@@ -69,4 +69,21 @@ textarea{
   textarea:focus,
   textarea.focus{
   	border-botom: soltelid 2px #969696;
+}
+.text{
+  font-family:"Times New Roman";
+  text-align: left;
+}
+.divwid{
+  clear: both;
+  padding: 10px;
+  border: none;
+  width:35%;
+}
+.checkbox{
+  float:left;
+}
+.submit{
+  clear:both;
+  float:left;
 }
