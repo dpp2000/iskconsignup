@@ -27,9 +27,9 @@
             </tr>
             <tr>
                <td>
-                 <div class="divwid">
-                  <h4 class = "text">First Name:</h4>
-                </div>
+                  <div class="divwid">
+                     <h4 class = "text">First Name:</h4>
+                  </div>
                </td>
             </tr>
             <tr>
@@ -37,9 +37,9 @@
             </tr>
             <tr>
                <td>
-                 <div class="divwid">
-                  <h4 class = "text">Last Name:</h4>
-                </div>
+                  <div class="divwid">
+                     <h4 class = "text">Last Name:</h4>
+                  </div>
                </td>
             </tr>
             <tr>
@@ -47,9 +47,9 @@
             </tr>
             <tr>
                <td>
-                 <div class="divwid">
-                  <h4 class = "text">Email:</h4>
-                </div>
+                  <div class="divwid">
+                     <h4 class = "text">Email:</h4>
+                  </div>
                </td>
             </tr>
             <tr>
@@ -65,9 +65,9 @@
             </tr>
             <tr>
                <td>
-                 <div class="divwid">
-                  <h4 class = "text">Home Phone:</h4>
-                </div>
+                  <div class="divwid">
+                     <h4 class = "text">Home Phone:</h4>
+                  </div>
                </td>
             </tr>
             <tr>
@@ -75,9 +75,9 @@
             </tr>
             <tr>
                <td>
-                 <div class="divwid">
-                  <h4 class = "text">Cell Phone:</h4>
-                </div>
+                  <div class="divwid">
+                     <h4 class = "text">Cell Phone:</h4>
+                  </div>
                </td>
             </tr>
             <tr>
@@ -85,62 +85,81 @@
             </tr>
             <tr>
                <td>
-                 <div class="divwid">
-                  <h4 class = "text">Full Address:</h4>
-                </div>
+                  <div class="divwid">
+                     <h4 class = "text">Full Address:</h4>
+                  </div>
                </td>
             </tr>
             <div style="display: none"><input type="text" name="Address" maxlength="20" value='Your Address' /></div>
             <textarea name="FullAddress" placeholder="Address" rows="5" cols="30"><?if ($FullAddress != "") echo $FullAddress; ?></textarea>
             <tr>
                <td>
-                 <div class="divwid">
-                  <h4 class = "text">Comments:</h4>
-                </div>
+                  <div class="divwid">
+                     <h4 class = "text">Comments:</h4>
+                  </div>
                </td>
             </tr>
             <textarea name="Comments" placeholder="Comments" rows="5" cols="30"><?if ($Comments != "") echo $Comments; ?></textarea>
-              <div class="divwid">
-              <h4 class="text">Interested In:</h4>
+            <div class="divwid">
+               <h4 class="text">Interested In:</h4>
             </div>
             <div class="divwid">
-            <table class="checkbox">
+            <table>
                <tr>
                   <td>
                      <input type="hidden" name="F_Philosophy" value="" />
-                     <input type="checkbox" name="F_Philosophy" <?if ($F_Philosophy) echo "checked='checked'"; ?> />Philosophy&nbsp;&nbsp;
-                     <BR />
+                     <input type="checkbox" name="F_Philosophy" <?if ($F_Philosophy) echo "checked='checked'"; ?> />Philosophy
+                  </td>
+               </tr>
+               <tr>
+                  <td>
                      <input type="hidden" name="F_Volunteer" value="" />
                      <input type="checkbox" name="F_Volunteer" <?if ($F_Volunteer) echo "checked='checked'"; ?> />Volunteer
-                     <BR />
+                  </td>
+               </tr>
+               <tr>
+                  <td>
                      <input type="hidden" name="F_Donation" value="" />
                      <input type="checkbox" name="F_Donation" <?if ($F_Donation) echo "checked='checked'"; ?>/>Donation
-                     <BR />
+                  </td>
+               </tr>
+               <tr>
+                  <td>
                      <input type="hidden" name="F_Yoga" value="" />
                      <input type="checkbox" name="F_Yoga" <?if ($F_Yoga) echo "checked='checked'"; ?>/>Yoga
-                  </td>
-                  <td style="text-align: left; vertical-align: top">
+               </tr>
+               </td>
+               <tr>
+                  <td>
                      <input type="hidden" name="F_PrasadamSponsor" value="" />
                      <input type="checkbox" name="F_PrasadamSponsor" <?if ($F_PrasadamSponsor) echo "checked='checked'"; ?> />Prasadam Sponsorship
-                     <BR />
+                  </td>
+               </tr>
+               <tr>
+                  <td>
                      <input type="hidden" name="F_Samskara" value="" />
                      <input type="checkbox" name="F_Samskara" <?if ($F_Samskara) echo "checked='checked'"; ?> />Samskaras
-                     <BR />
+                  </td>
+               </tr>
+               <tr>
+                  <td>
                      <input type="hidden" name="F_SundaySchool" value="" />
                      <input type="checkbox" name="F_SundaySchool" <?if ($F_SundaySchool) echo "checked='checked'"; ?> />Sunday School
-                     <BR />
+                  </td>
+               </tr>
+               <tr>
+                  <td>
                      <input type="hidden" name="F_GitaCamp" value="" />
                      <input type="checkbox" name="F_GitaCamp" <?if ($F_GitaCamp) echo "checked='checked'"; ?> />Summer Gita Camp
                   </td>
                </tr>
             </table>
-          </div>
             <div class="divwid">
-            <tr class="submit">
-               <td style="text-align: left"><input type="submit" name="submit" value="Submit"
-                  style="width: 100px; font-weight: bold;"/></td>
-            </tr>
-          </div>
+               <tr class="submit">
+                  <td style="text-align: left"><input type="submit" name="submit" value="Submit"
+                     style="width: 100px; font-weight: bold;"/></td>
+               </tr>
+            </div>
          </form>
          <script type="text/javascript"> var frmvalidator  = new Validator("ContactDetails");
             frmvalidator.addValidation("Email","req","Please enter your Email address");
